@@ -1,0 +1,81 @@
+header.cabecalho {
+  display: grid;
+
+  grid-template-columns: 250px auto 250px;
+  margin-bottom: 18px;
+}
+
+div.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+span.icone-barras {
+}
+
+header.cabecalho > nav.menu {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+div.links > a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+
+  padding: 16px;
+
+  transition: color 0.3s;
+}
+
+div.links > a:hover {
+  color: var(--violet-200);
+}
+
+div.links > a.ativo {
+  color: var(--primary-orange);
+}
+
+div.carrinho {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  justify-content: flex-end;
+}
+
+div.carrinho > a.botao-carrinho {
+  text-decoration: none;
+
+  position: relative;
+}
+
+a.botao-carrinho > small {
+  width: 20px;
+  height: 20px;
+  background-color: var(--yellow-400);
+  border-radius: var(--radii-full);
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000;
+  text-align: center;
+
+  position: absolute;
+  top: -7px;
+  right: -7px;
+}
+
+.rounded-button-outline {
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--white-banana);
+  border-radius: var(--radii-full);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

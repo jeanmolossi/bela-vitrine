@@ -1,0 +1,92 @@
+:root {
+  --primary-orange: #ff6b01;
+  --middle-orange-yellow: #ffcaa4;
+  --yellow-100: #ffebc1;
+  --yellow-200: #fed78e;
+  --yellow-300: #fdcf56;
+  --yellow-400: #fdbc0b;
+  --yellow-500: #fdc01c;
+  --white-banana: #fff7f1;
+  --green: #01af67;
+  --primary-violet: #45409c;
+  --violet-200: #717195;
+  --yellow-gradient: radial-gradient(
+      74% 74% at 50% 26%,
+      var(--yellow-300) 0%,
+      var(--yellow-100) 100%
+    ),
+    var(--yellow-400);
+  --body-background-gradiend: radial-gradient(
+      56.5% 56.5% at 50% 9%,
+      var(--primary-orange) 0%,
+      var(--yellow-100) 100%
+    ),
+    var(--middle-orange-yellow);
+
+  --orange-box-gradient: radial-gradient(
+      90.17% 90.17% at 50% 9.83%,
+      var(--primary-orange) -30%,
+      var(--yellow-400) 44.79%,
+      var(--yellow-100) 200%
+    ),
+    var(--yellow-300);
+
+  --radii-full: 100%;
+  --radii-xl: 48px;
+  --radii-lg: 38px;
+  --radii-md: 24px;
+  --radii-sm: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  background: var(--body-background-gradiend);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+main.conteudo-principal {
+  width: calc(100% - 96px);
+  height: calc(100% - 96px);
+
+  margin: 48px;
+  background-color: var(--yellow-100);
+  border-radius: var(--radii-lg);
+  box-shadow: 5px 5px 0 var(--yellow-400);
+  overflow: hidden;
+}
+
+.conteudo-scrollavel {
+  padding: 32px;
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.conteudo-scrollavel::-webkit-scrollbar {
+  width: 5px;
+}
+
+.conteudo-scrollavel::-webkit-scrollbar-thumb {
+  background-color: #ff6b0180;
+  border-radius: 5px;
+}
